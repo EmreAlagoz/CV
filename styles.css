@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+    font-weight: lighter;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: rgb(243, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 257mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;        
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+.header{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.left-col-3{
+    padding: 10px;
+    width: 25%;
+}
+.center-col-3{
+    width: 50%;
+    padding-left: 100px;
+}
+.right-col-3{
+    margin-top: 10px;
+    width: 25%;
+}
+.objectives p{
+    width: 100%;
+    font-size: 13pt;
+}
+.info{
+    font-size: smaller;
+}
+.skillh{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.skillh{
+    width: 100%;
+}
+.elf{
+    color: rgb(105, 20, 185);
+}
