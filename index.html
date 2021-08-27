@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
     <script src="https://kit.fontawesome.com/43f3305dd0.js" crossorigin="anonymous"></script>
+    <style>
+    body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+    font-weight: lighter;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 257mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;        
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+.header{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.left-col-3{
+    padding: 10px;
+    width: 25%;
+}
+.center-col-3{
+    width: 50%;
+    padding-left: 100px;
+}
+.right-col-3{
+    margin-top: 10px;
+    width: 25%;
+}
+.objectives p{
+    width: 100%;
+    font-size: 13pt;
+}
+.info{
+    font-size: smaller;
+}
+.skillh{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.skillh{
+    width: 100%;
+}
+.elf{
+    color: rgb(105, 20, 185);
+}
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -26,8 +118,8 @@
             </div>
         </div>
         <div class="objectives">
-            <h4>OBCEJTIVES</h4>
-            <p>An enthusiastic, Bachelor’s-level Computer Engineering student who wants to discover the subjects of computer science. Decisive, collaborative, open-minded and hard-working individual. My aim is to gain experience in Software Industry Currently looking for internship opportunities.</p>
+            <h4>OBJECTIVES</h4>
+            <p>An enthusiastic, Bachelor’s-level Computer Engineering student who wants to discover the subjects of computer science. Decisive, collaborative, open-minded and hard-working individual. My aim is to gain experience in Software Industry.</p><!--Currently looking for internship opportunities.</p>-->
         </div>
         <div class="education">
             <h4>EDUCATION</h4>
@@ -38,14 +130,28 @@
                 <p class="info">- 2017-2019 CGPA:94.66</p>
                 <p class="info">- Graduated as the Second (2nd) Graduate of the High School</p>
                 <h5><span style="color:rgb(105, 20, 185)">Bachelor`s Degree|</span>Gazi University</h5>
-                <p class="info">- 2019-Current CGPA:3,87</p>
+                <p class="info">- 2019-Current CGPA:3,88</p>
             </div>
         </div>
+        <div class="experience">
+            <h4>EXPERIENCE</h4>
+            <h5><span style="color:rgb(105, 20, 185)">Marketyo|</span>Back-end Developer</h5>
+            <p class="info">- July 2021/ August 2021</p>
+            <p class="info">- (First project) Developed a project to meet the needs of the markets using .NET Core.
+            Also used code first and database first approaches to design SQL database. </p>
+            <p class="info">- Authorization / Authentication with token or basic types.</p>
+            <p class="info">- Layered architectural design and SOLID principle used for coding part.</p>
+            <p class="info">- Designed logging system with using NOSql(MongoDb).</p>
+            <p class="info">- (Second Project) Creating API requests for passing data through APIs using real database.</p>
+        </div>
+        
+    </div>
+    <div class="page">
         <div class="skills">
             <h4>SKILLS</h4>
             
                 <div class="el">
-                    <h5><span class="elf"><i class="fas fa-check"></i></span>C,C#,Python,SQL,HTML,CSS</h5>
+                    <h5><span class="elf"><i class="fas fa-check"></i></span>C, C# , .NET , Python , SQL , HTML ,CSS</h5>
                 </div>
                 <div class="el">
                     <h5><span class="elf"><i class="fas fa-check"></i></span>English (Upper-Intermediate)</h5>
@@ -53,7 +159,6 @@
                 <div class="el">
                     <h5><span class="elf"><i class="fas fa-check"></i></span>MS Office</h5>
                 </div>
-                
         </div>
         <div class="activities">
             <h4>ACTIVITIES</h4>
